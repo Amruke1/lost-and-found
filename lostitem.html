@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost and Found - Post Lost Item</title>
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="lost.css">
 </head>
 <body>
     <div id="nav-placeholder"></div>
     <div class="container">
         <h1>Post a Lost Item</h1>
         <form id="lost-item-form">
-            <label for="itemName">Item Name:</label>
-            <input type="text" id="itemName" name="itemName" required>
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="itemName" required>
+            </div>
 
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
 
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
 
-            <label for="date">Date Lost:</label>
-            <input type="date" id="date" name="date" required>
+            <div class="form-group">
+                <label for="date">Date Lost:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
 
-            <label for="category">Category:</label>
-            <select id="category" name="category" required>
-                <option value="">Selekto kategorine</option>
-                <option value="electronics">Elektronike</option>
-                <option value="clothing">Veshmbathje</option>
-                <option value="accessories">Aksesore</option>
-                <option value="documents">Dokumente</option>
-                <option value="other">Te tjera</option>
-            </select>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Selekto kategorine</option>
+                    <option value="electronics">Elektronike</option>
+                    <option value="clothing">Veshmbathje</option>
+                    <option value="accessories">Aksesore</option>
+                    <option value="documents">Dokumente</option>
+                    <option value="other">Te tjera</option>
+                </select>
+            </div>
 
             <button type="submit">Raporto</button>
         </form>
@@ -45,4 +55,3 @@
     </script>
 </body>
 </html>
-
