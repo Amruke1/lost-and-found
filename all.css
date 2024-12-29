@@ -26,7 +26,7 @@ body {
 
 /* Header Styles */
 header {
-    background: #1a5f7a;  /* Dark blue for a more official look */
+    background: #1a5f7a;  
     color: #000000;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@ header #branding {
 }
 
 header #branding h1 {
-    margin: 0;
+    margin: auto;
     color: #ffffff;
 }
 
@@ -194,22 +194,14 @@ nav ul li a:hover {
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
-
-/* FAQ Page */
-.faq-item {
-    background: #ffffff;
-    padding: 20px;
+.box{
     margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.faq-item h3 {
-    color: #1a5f7a;
-}
 
-/* Contact Page */
+
 #contact form {
     background: #ffffff;
     padding: 20px;
@@ -217,10 +209,19 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* User Dashboard */
+
 .dashboard-section {
     background: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
+    
+    
+}
+ footer{
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
