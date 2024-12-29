@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 
+=======
+/* Global Styles */
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     
 }
 .container{
@@ -14,6 +19,15 @@ body {
     line-height: 1.6;
     background-color: #D9EAFD;
     color: #ffffff;
+=======
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #4d4c4c;
+    color: #333;
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
 }
 
 .container {
@@ -21,6 +35,7 @@ body {
     margin: auto;
     overflow: hidden;
     padding: 20px;
+<<<<<<< HEAD
 
 }
 .container1{
@@ -47,6 +62,26 @@ header a {
 }
 
 header ul {
+=======
+}
+
+/* Header Styles */
+.header {
+    background: #1a5f7a;  
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.header ul {
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
     padding: 0;
     list-style: none;
 }
@@ -56,6 +91,7 @@ header li {
     padding: 0 20px;
 }
 
+<<<<<<< HEAD
 header #branding {
     float: left;
 }
@@ -66,33 +102,62 @@ header #branding h1 {
 }
 
 header nav {
+=======
+.header #branding {
+    float: left;
+}
+
+.header #branding h1 {
+    margin: 0;
+    color: #4b4747;
+}
+
+.header nav {
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
     float: right;
     margin-top: 10px;
 }
 
+<<<<<<< HEAD
 header .highlight, header .current a {
+=======
+.header .highlight, header .current a {
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
     color: #57c5b6;  /* Light blue highlight */
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 header a:hover {
+=======
+.header a:hover {
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
     color: #57c5b6;  /* Light blue on hover */
     font-weight: bold;
 }
 
 /* Navigation Menu */
+<<<<<<< HEAD
 nav ul {
+=======
+.nav ul {
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
     background-color: #ffffff;  /* White background for menu */
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 nav ul li a {
+=======
+.nav ul li a {
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
     color: #1a5f7a;  /* Dark blue text for menu items */
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
 }
@@ -109,6 +174,11 @@ nav ul li a {
     color: #555;
 }
 nav ul li a:hover {
+=======
+}
+
+.nav ul li a:hover {
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
     background-color: #e8f1f5;  /* Light blue background on hover */
     color: #1a5f7a;
 }
@@ -131,7 +201,11 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Boxes */
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
 #boxes {
     margin-top: 20px;
 }
@@ -143,7 +217,11 @@ nav ul li a:hover {
     text-align: center;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Form Styles */
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
 .form-container {
     background: #ffffff;
     padding: 20px;
@@ -156,9 +234,12 @@ nav ul li a:hover {
     margin-bottom: 20px;
     color: #1a5f7a;
 }
+<<<<<<< HEAD
 .box3{
     padding-bottom: 100px;
 }
+=======
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
 
 .form-container input[type="text"],
 .form-container input[type="email"],
@@ -217,6 +298,7 @@ nav ul li a:hover {
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
     
 }
 .box{
@@ -225,6 +307,24 @@ nav ul li a:hover {
 
 
 
+=======
+}
+
+/* FAQ Page */
+.faq-item {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    color: #1a5f7a;
+}
+
+/* Contact Page */
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
 #contact form {
     background: #ffffff;
     padding: 20px;
@@ -232,12 +332,17 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 
+=======
+/* User Dashboard */
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
 .dashboard-section {
     background: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
+<<<<<<< HEAD
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 
     
@@ -254,3 +359,66 @@ nav ul li a:hover {
     justify-content: center;
     display: block;
 }
+=======
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* ... (previous styles remain unchanged) ... */
+
+/* Kosovo Map Styles */
+#map-container {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#kosovo-map {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#kosovo-map svg {
+    width: 100%;
+    height: auto;
+}
+
+#kosovo-map path:hover {
+    fill: #57c5b6;
+    cursor: pointer;
+}
+
+#kosovo-map circle {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+#kosovo-map circle:hover {
+    fill: #57c5b6;
+}
+
+#region-info {
+    margin-top: 20px;
+    padding: 20px;
+    background: #e8f1f5;
+    border-radius: 5px;
+}
+
+#region-info h2 {
+    color: #1a5f7a;
+    margin-bottom: 10px;
+}
+
+#region-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#region-info li {
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+/* ... (rest of the styles remain unchanged) ... */
+>>>>>>> d193fa965186247689efc78eb8ac0488c502dc1a
