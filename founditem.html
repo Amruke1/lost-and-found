@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost and Found - Post Found Item</title>
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="founditem .css"> <!-- Ensure this path is correct -->
 </head>
 <body>
     <div id="nav-placeholder"></div>
     <div class="container">
-        <h1>Raporto nje gje qe keni gjetur</h1>
+        <h1>Raporto një gjë që keni gjetur</h1>
         <form id="found-item-form">
-            <label for="itemName">Emri i produktit:</label>
-            <input type="text" id="itemName" name="itemName" required>
-
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
-
-            <label for="location">Location Found:</label>
-            <input type="text" id="location" name="location" required>
-
-            <label for="date">Data kur e keni gjetur:</label>
-            <input type="date" id="date" name="date" required>
-
-            <label for="category">Category:</label>
-            <select id="category" name="category" required>
-                <option value="">Selekto nje kategori</option>
-                <option value="electronics">Elektronike</option>
-                <option value="clothing">Veshmbathje</option>
-                <option value="accessories">Aksesore</option>
-                <option value="documents">Dokumnete</option>
-                <option value="other">Te tjera</option>
-            </select>
-
+            <div class="form-group">
+                <label for="itemName">Emri i produktit:</label>
+                <input type="text" id="itemName" name="itemName" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Përshkrimi:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="location">Vendi ku e keni gjetur:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Data kur e keni gjetur:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Kategoria:</label>
+                <select id="category" name="category" required>
+                    <option value="">Selekto një kategori</option>
+                    <option value="electronics">Elektronike</option>
+                    <option value="clothing">Veshmbathje</option>
+                    <option value="accessories">Aksesore</option>
+                    <option value="documents">Dokumente</option>
+                    <option value="other">Të tjera</option>
+                </select>
+            </div>
             <button type="submit">Submit</button>
         </form>
     </div>
