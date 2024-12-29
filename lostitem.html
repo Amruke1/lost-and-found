@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Post Lost Item</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container">
+        <h1>Post a Lost Item</h1>
+        <form id="lost-item-form">
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" name="itemName" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="date">Date Lost:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">Selekto kategorine</option>
+                <option value="electronics">Elektronike</option>
+                <option value="clothing">Veshmbathje</option>
+                <option value="accessories">Aksesore</option>
+                <option value="documents">Dokumente</option>
+                <option value="other">Te tjera</option>
+            </select>
+
+            <button type="submit">Raporto</button>
+        </form>
+    </div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
+

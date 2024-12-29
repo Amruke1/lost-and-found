@@ -24,6 +24,7 @@
                 </ul>
             </nav>
         </div>
+     
     </header>
 
     <section id="showcase">
@@ -32,60 +33,88 @@
             <p>Gjej çfarë keni humbur, trego çfarë keni gjetur</p>
         </div>
     </section>
-
-    <section id="boxes">
-        <div class="container">
-            <div class="box1">
-                <h3>Raporto një produkt të humbur</h3>
-                <p>Keni humbur ndonjë gjë? Raporto këtu për të rritur shancet për ta gjetur.</p>
-                <a href="lostitem.html" class="button">Raporto një produkt të humbur</a>
+    <div class="container">
+        <h2 class="text-center my-4">Recently Lost Items</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <img src="path/to/umbrella-image.jpg" class="card-img-top" alt="Red Umbrella">
+                    <div class="card-body">
+                        <h3 class="card-title">Red Umbrella</h3>
+                        <p class="card-text"><strong>Location:</strong> City Center</p>
+                        <p class="card-text"><strong>Date Lost:</strong> 2023-06-01</p>
+                    </div>
+                </div>
             </div>
-            <div class="box2">
-                <h3>Raporto një produkt të gjetur</h3>
-                <p>Keni gjetur diqka?Raportoni këru për ta kthyer tek pronari përkatës.</p>
-                <a href="founditem.html" class="button">Report Found Item</a>
-            </div>
-            <div class="box3">
-                <h3>Search for Items</h3>
-                <p>Kërkoni një produkt të humbur? Kërkoni në databazën tonë të produkteve të humbura</p>
-                <a href="search.html" class="button">Kërko produktin</a>
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <img src="path/to/wallet-image.jpg" class="card-img-top" alt="Black Wallet">
+                    <div class="card-body">
+                        <h3 class="card-title">Black Wallet</h3>
+                        <p class="card-text"><strong>Location:</strong> Central Park</p>
+                        <p class="card-text"><strong>Date Lost:</strong> 2023-06-02</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+
+<section id="boxes">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Raporto një produkt të humbur</h3>
+                        <p class="card-text">Keni humbur ndonjë gjë? Raporto këtu për të rritur shancet për ta gjetur.</p>
+                        <a href="lostitem.html" class="btn btn-primary">Raporto një produkt të humbur</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Raporto një produkt të gjetur</h3>
+                        <p class="card-text">Keni gjetur diqka? Raportoni këtu për ta kthyer tek pronari përkatës.</p>
+                        <a href="founditem.html" class="btn btn-success">Report Found Item</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Kerko produktin</h3>
+                        <p class="card-text">Kërkoni një produkt të humbur? Kërkoni në databazën tonë të produkteve të humbura.</p>
+                        <a href="search.html" class="btn btn-info">Kërko produktin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     
+         
+      </div>
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="home.html">Home</a></li> 
+        <li class="nav-item"><a href="#" class="lostitem.html">E humbur</a></li>
+        <li class="nav-item"><a href="#"  class="founditem.html">E gjetur</a></li>
+        <li class="nav-item"><a href="#" class="search.html">Kerko</a></li>
+        <li class="nav-item"><a href="#"class="about.html">About</a></li>
+        <li class="nav-item"><a href="#" class="privacy.html">Privacy</a></li>
+        <li class="nav-item"><a href="#" class="contact.html">Contact</a></li>
+        <li class="nav-item"><a href="#" class="terms.html">Terms</a></li>      </ul>
+        <p class="text-center text-body-secondary">Lost & Found Kosovo | School Project &copy</p>
 
-    <footer class="a.name">
-        
-       
-          <div class="container">
-  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-    <div class="col mb-3">
-      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      </a>
-      <p class="text-body-secondary"> Lost & Found Kosovo | School Project &copy;  </p>
-    </div>
-
-    <div class="col mb-3">
-
-    </div>
-
-   
-
-   
-
-    <div class="col mb-3">
-      <h5>Section</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href=home.html>Home</a></li>
-        <li class="nav-item mb-2"><a href=lostitem.html>E humbur</a></li>
-        <li class="nav-item mb-2"><a href=founditem.html>E gjetur</a></li>
-        <li class="nav-item mb-2"><a href=search.html>Kerko</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        <li class="nav-item mb-2"><a href=privacy.html>Privacy</a></li>
-      </ul>
-    </div>
-  </footer>
+  </div>
 </div>
     </footer>
     

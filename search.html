@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Search Lost Items</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="lostitem.html">E humbur</a></li>
+            <li><a href="founditem.html">E gjetur</a></li>
+            <li><a href="search.html">Kërko</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div id="nav-placeholder"></div>
+    <div class="container">
+        <h1>Search Lost Items</h1>
+        <form id="search-form">
+            <label for="searchKeyword">Keyword:</label>
+            <input type="text" id="searchKeyword" name="searchKeyword">
+
+            <label for="searchLocation">Location:</label>
+            <input type="text" id="searchLocation" name="searchLocation">
+
+            <label for="searchCategory">Category:</label>
+            <select id="searchCategory" name="searchCategory">
+                <option value="">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+                <option value="documents">Documents</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="searchDateFrom">Nga data:</label>
+            <input type="date" id="searchDateFrom" name="searchDateFrom">
+
+            <label for="searchDateTo">Ne daten:</label>
+            <input type="date" id="searchDateTo" name="searchDateTo">
+
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="search-results">
+        </div>
+    </div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

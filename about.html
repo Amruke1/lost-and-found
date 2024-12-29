@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - About</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+<div class="container">
+    <h1>About Lost and Found</h1>
+    <div class="about-content">
+        <p>Mirësevini në "Humbur dhe Gjetur", një platformë e drejtuar nga komuniteti e dedikuar për të ndihmuar njerëzit të ribashkohen me sendet e tyre të humbura.
+
+        </p>
+        <h2>Misioni yne</h2>
+        <p>Misioni ynë është të krijojmë një sistem të thjeshtë, efikas dhe miqësor për përdoruesit që lidh njerëzit që kanë humbur sende me ata që i kanë gjetur.
+        </p>
+        <h2>Si funksionon</h2>
+        <ol>
+            <li><strong>Raporto një Send Humbur:</strong> Nëse keni humbur diçka, mund ta postoni lehtësisht informacionin në platformën tonë.</li>
+            <li><strong>Kërko për Sende të Gjetura:</strong>   Përdorni funksionin tonë të kërkimit për të kërkuar sende që janë gjetur dhe raportuar. </li>
+            <li><strong>Lidhuni dhe Merrni:</strong> Nëse gjeni një përputhje, mund të lidheni me personin që ka gjetur sendin përmes sistemit tonë të sigurt për të organizuar marrjen.</li>
+        </ol>
+        <h2>Our Team</h2>
+        <p>Lost and Found  mbahet nga një ekip i përkushtuar vullnetarësh që janë të pasionuar për të ndihmuar të tjerët dhe për të ndihmuar në ndërtimin e një komuniteti më të fortë.</p>
+    </div>
+</div>
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Terms of Service</title>
+    <link rel="stylesheet" href="all.css">
+
+</head>
+<body>
+    <header><div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Lost</span> and Found</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="lostitem.html">E humbur</a></li>
+                <li><a href="founditem.html">E gjetur</a></li>
+                <li><a href="search.html">Kërko</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+ </header>
+    <div id="nav-placeholder"></div>
+    <div class="container">
+        <h1>Terms of Service</h1>
+        <div class="terms-content">
+            <h2>1.Pranimi i Kushteve</h2>
+            <p> Duke aksesuar ose përdorur shërbimin "Humbur dhe Gjetur", ju pranoni të jeni të lidhur nga këto Kushtet e Shërbimit.</p>
+
+            <h2>2.  Përshkrimi i Shërbimit</h2>
+            <p>Lost and Found  është një platformë që lejon përdoruesit të raportojnë sende të humbura dhe të kërkojnë sende të gjetura.</p>
+
+            <h2>3.  Pëgjegjësitë e Përdoruesve</h2>
+            <p>Përdoruesit janë përgjegjës për ofrimin e informacionit të saktë kur postojnë sende të humbura ose të gjetura.            </p>
+
+            <h2>4. Privatësia</h2>
+            <p>Ne respektojmë privatësinë tuaj dhe mbrojmë informacionin tuaj personal. Ju lutem referojuni Politikës tonë të Privatësisë për më shumë detaje.            </p>
+
+            <h2>5.Kufizimi i Përgjegjësisë</h2>
+            <p>Lost and Foundnuk është përgjegjës për asnjë humbje ose dëmtim që mund të ndodhë si rezultat i përdorimit të shërbimit.</p>
+
+            <h2>6.  Modifikimet e Shërbimit</h2>
+            <p>We reserve the right to modify or discontinue the service at any time without notice.</p>
+
+            <h2>7. Ligji Rregullues</h2>
+            <p>Këto Kushte Shërbimi do të rregullohen dhe interpretohen në përputhje me ligjet e Republikes se Kosoves.</p>
+        </div>
+    </div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
