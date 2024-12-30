@@ -239,3 +239,72 @@ footer {
     flex-direction: column; 
     justify-content: center; 
 }
+
+
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+.style
+    
+    body {
+        font-size: 16px; /* Base font size */
+    }
+
+    /* Styles for mobile devices */
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px; /* Smaller font size for mobile */
+        }
+
+        header {
+            text-align: center; /* Center header text */
+        }
+
+        nav ul {
+            flex-direction: column; /* Stack navigation items vertically */
+        }
+
+        nav ul li {
+            margin: 10px 0; /* Space between items */
+        }
+
+        .container {
+            padding: 10px; /* Add padding for mobile */
+        }
+
+        .card {
+            margin: 10px; /* Reduce card margin */
+        }
+    }
+
+    img {
+        max-width: 100%; /* Ensure images don't overflow */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+
+
+
+body {
+    padding-top: 56px; 
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: #007bff;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
