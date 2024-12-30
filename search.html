@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost and Found - Search Lost Items</title>
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="search.css"> 
 </head>
 <body>
     <nav>
@@ -16,31 +16,40 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-    <div id="nav-placeholder"></div>
     <div class="container">
-        <h1>Search Lost Items</h1>
+        <h1>Kerko produkte te humbura</h1>
         <form id="search-form">
-            <label for="searchKeyword">Keyword:</label>
-            <input type="text" id="searchKeyword" name="searchKeyword">
+            <div class="form-group">
+                <label for="searchKeyword">Fjalet kyqe:</label>
+                <input type="text" id="searchKeyword" name="searchKeyword" placeholder="Enter keywords...">
+            </div>
 
-            <label for="searchLocation">Location:</label>
-            <input type="text" id="searchLocation" name="searchLocation">
+            <div class="form-group">
+                <label for="searchLocation">Lokacioni:</label>
+                <input type="text" id="searchLocation" name="searchLocation" placeholder="Enter location...">
+            </div>
 
-            <label for="searchCategory">Category:</label>
-            <select id="searchCategory" name="searchCategory">
-                <option value="">All Categories</option>
-                <option value="electronics">Electronics</option>
-                <option value="clothing">Clothing</option>
-                <option value="accessories">Accessories</option>
-                <option value="documents">Documents</option>
-                <option value="other">Other</option>
-            </select>
+            <div class="form-group">
+                <label for="searchCategory">Kategorite:</label>
+                <select id="searchCategory" name="searchCategory">
+                    <option value="">Te gjitha</option>
+                    <option value="electronics">Elektronike</option>
+                    <option value="clothing">Veshmbathje</option>
+                    <option value="accessories">Aksesore</option>
+                    <option value="documents">Dokumente</option>
+                    <option value="other">Te tjera</option>
+                </select>
+            </div>
 
-            <label for="searchDateFrom">Nga data:</label>
-            <input type="date" id="searchDateFrom" name="searchDateFrom">
+            <div class="form-group">
+                <label for="searchDateFrom">Nga data:</label>
+                <input type="date" id="searchDateFrom" name="searchDateFrom">
+            </div>
 
-            <label for="searchDateTo">Ne daten:</label>
-            <input type="date" id="searchDateTo" name="searchDateTo">
+            <div class="form-group">
+                <label for="searchDateTo">Ne daten:</label>
+                <input type="date" id="searchDateTo" name="searchDateTo">
+            </div>
 
             <button type="submit">Search</button>
         </form>

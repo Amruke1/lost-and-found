@@ -214,3 +214,14 @@ footer {
 .a.name {
     display: block; /* Removed unnecessary properties */
 }
+/* Custom CSS to add space between nav items */
+.nav-item {
+    margin-right: 15px; /* Adjust the value as needed */
+}
+
+.nav-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+.section{
+    margin-bottom:100px;
+}
