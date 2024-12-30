@@ -84,7 +84,10 @@ nav ul li a {
 .card {
     border: none; 
     border-radius: 10px; 
-}
+    flex: 1;               
+    min-height: 300px;    
+    display: flex;        
+    flex-direction: column;}
 
 .card-title {
     font-weight: bold; 
@@ -163,8 +166,6 @@ nav ul li a:hover {
 .button:hover {
     background: #57c5b6;
 }
-
-/* Item Card Styles */
 .item-card {
     background: #ffffff;
     padding: 20px;
@@ -178,12 +179,10 @@ nav ul li a:hover {
     color: #1a5f7a;
 }
 
-/* Search Results */
 #search-results {
     margin-top: 20px;
 }
 
-/* About Page */
 #about {
     padding: 20px;
     background: #ffffff;
@@ -214,6 +213,7 @@ footer {
 .a.name {
     display: block; /* Removed unnecessary properties */
 }
+
 /* Custom CSS to add space between nav items */
 .nav-item {
     margin-right: 15px; /* Adjust the value as needed */
@@ -222,6 +222,20 @@ footer {
 .nav-item:last-child {
     margin-right: 0; /* Remove margin from the last item */
 }
-.section{
-    margin-bottom:100px;
+
+.section {
+    margin-bottom: 100px;
+}
+
+
+.row {
+    display: flex;         
+    flex-wrap: wrap;       
+}
+
+.card-body {
+    flex-grow: 1;          
+    display: flex;         
+    flex-direction: column; 
+    justify-content: center; 
 }
