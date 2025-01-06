@@ -15,15 +15,27 @@
             <div id="branding">
                 <h1><span class="highlight">Lost</span> and Found</h1>
             </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="lostitem.html">E humbur</a></li>
-                    <li><a href="founditem.html">E gjetur</a></li>
-                    <li><a href="search.html">Kërko</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                &#9776; 
+            </div>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                &#9776; 
+            </div>
+            <ul id="nav-links">
+                <li class="current"><a href="home .html">Home</a></li>
+                <li><a href="reportlost.html">E humbur</a></li>
+                <li><a href="founditem.html">E gjetur</a></li>                   
+                <li><a href="search.html">Kërko</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+        </nav>
+    </div>
         </div>
     </header>
     <div id="nav-placeholder"></div>
@@ -65,12 +77,13 @@
             <p>Këto Kushte Shërbimi do të rregullohen dhe interpretohen në përputhje me ligjet e Republikës së Kosovës.</p>
         </div>
     </div>
+   
     <script>
-        fetch('nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            });
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active'); // Toggle the active class
+        });
     </script>
+    
 </body>
 </html>

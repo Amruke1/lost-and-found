@@ -109,3 +109,47 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;}
+    /* Base styles for the hamburger menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Size of the hamburger icon */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for the navigation links */
+nav ul {
+    display: flex; /* Default display for desktop */
+    justify-content: flex-end; /* Align to the right */
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    nav ul {
+        display: none; /* Hide the nav links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust based on header height */
+        right: 0; /* Align to the right */
+        background-color: #ffffff; /* Background color */
+        width: 100%; /* Full width */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    nav ul.active {
+        display: flex; /* Show the nav links when active */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between items in mobile view */
+    }
+}

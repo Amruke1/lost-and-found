@@ -5,48 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost and Found - Report Lost Item</title>
     <link rel="stylesheet" href="styles.css">
-
     <link rel="stylesheet" href="all.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="lostitem.html">E humbur</a></li>
-            <li><a href="founditem.html">E gjetur</a></li>
-            <li><a href="search.html">Kërko</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
     <header>
         <div class="container">
             <div id="branding">
                 <h1><span class="highlight">Lost</span> and Found</h1>
             </div>
             <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="lostitem.html">E humbur</a></li>
-                    <li><a href="founditem.html">E gjetur</a></li>
+                <div class="hamburger" id="hamburger">
+                    &#9776; <!-- Hamburger icon -->
+                </div>
+                <ul id="nav-links">
+                    <li class="current"><a href="home.html">Home</a></li>
+                    <li><a href="reportlost.html">E humbur</a></li>
+                    <li><a href="founditem.html">E gjetur</a></li>                   
                     <li><a href="search.html">Kërko</a></li>
                     <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-     
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Lost</span> and Found</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="report-lost.html">Report Lost</a></li>
-                    <li><a href="report-found.html">Report Found</a></li>
-                    <li><a href="search.html">Search</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="map.html">Harta</a></li>
-
                 </ul>
             </nav>
         </div>
@@ -80,33 +56,39 @@
             </div>
         </div>
     </section>
+
     <div class="bd-example m-0 border-0">
-    
         <div class="card" style="width: 18rem;">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+            </svg>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
         </div>
-        
-          </div>
-    <footer>
-        <p>&copy; 2023 Lost and Found. All rights reserved.</p>
-
-
+    </div>
 
     <footer>
         <p>&copy; 2023 Lost and Found. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active'); // Toggle the active class
+        });
+    </script>
 </body>
 </html>
