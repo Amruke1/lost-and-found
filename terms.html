@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Terms of Service</title>
+    <link rel="stylesheet" href="terms.css">
+</head>
+<body>
+    <nav>
+       
+    </nav>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Lost</span> and Found</h1>
+            </div>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                &#9776; 
+            </div>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                &#9776; 
+            </div>
+            <ul id="nav-links">
+                <li class="current"><a href="home .html">Home</a></li>
+                <li><a href="reportlost.html">E humbur</a></li>
+                <li><a href="founditem.html">E gjetur</a></li>                   
+                <li><a href="search.html">Kërko</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+        </nav>
+    </div>
+        </div>
+    </header>
+    <div id="nav-placeholder"></div>
+    
+    <div class="container">
+        <h1>Terms of Service</h1>
+        <nav class="terms-nav">
+            <ul>
+                <li><a href="#acceptance">1. Pranimi i Kushteve</a></li>
+                <li><a href="#description">2. Përshkrimi i Shërbimit</a></li>
+                <li><a href="#responsibilities">3. Pëgjegjësitë e Përdoruesve</a></li>
+                <li><a href="#privacy">4. Privatësia</a></li>
+                <li><a href="#liability">5. Kufizimi i Përgjegjësisë</a></li>
+                <li><a href="#modifications">6. Modifikimet e Shërbimit</a></li>
+                <li><a href="#governing-law">7. Ligji Rregullues</a></li>
+            </ul>
+        </nav>
+        
+        <div class="terms-content">
+            <h2 id="acceptance">1. Pranimi i Kushteve</h2>
+            <p>Duke aksesuar ose përdorur shërbimin "Humbur dhe Gjetur", ju pranoni të jeni të lidhur nga këto Kushtet e Shërbimit.</p>
+
+            <h2 id="description">2. Përshkrimi i Shërbimit</h2>
+            <p>Lost and Found është një platformë që lejon përdoruesit të raportojnë sende të humbura dhe të kërkojnë sende të gjetura.</p>
+
+            <h2 id="responsibilities">3. Pëgjegjësitë e Përdoruesve</h2>
+            <p>Përdoruesit janë përgjegjës për ofrimin e informacionit të saktë kur postojnë sende të humbura ose të gjetura.</p>
+
+            <h2 id="privacy">4. Privatësia</h2>
+            <p>Ne respektojmë privatësinë tuaj dhe mbrojmë informacionin tuaj personal. Ju lutem referojuni Politikës tonë të Privatësisë për më shumë detaje.</p>
+
+            <h2 id="liability">5. Kufizimi i Përgjegjësisë</h2>
+            <p>Lost and Found nuk është përgjegjës për asnjë humbje ose dëmtim që mund të ndodhë si rezultat i përdorimit të shërbimit.</p>
+
+            <h2 id="modifications">6. Modifikimet e Shërbimit</h2>
+            <p>We reserve the right to modify or discontinue the service at any time without notice.</p>
+
+            <h2 id="governing-law">7. Ligji Rregullues</h2>
+            <p>Këto Kushte Shërbimi do të rregullohen dhe interpretohen në përputhje me ligjet e Republikës së Kosovës.</p>
+        </div>
+    </div>
+   
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+
+        });
+    </script>
+      <script>
+        window.addEventListener('scroll', function() {
+            const videoBackground = document.getElementById('video-background');
+            const scrollY = window.scrollY;
+            videoBackground.style.opacity = Math.max(0, 1 - scrollY / 500); // Adjust 500 for speed of fade
+        });
+    </script>
+
+    
+</body>
+</html>

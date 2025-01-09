@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    line-height: 1.5; 
+    color: #555;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.9rem; 
+    padding: 0px0px;
+}
+
+.about-content {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 14px; /* Smaller text for content */
+}
+
+h1 {
+    font-size: 2.5rem; /* Large heading for the main title */
+    font-weight: 600; /* Slightly bolder for a modern feel */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8rem; /* Medium heading */
+    font-weight: 500;
+    margin-top: 25px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.4rem; /* Smaller sub-heading */
+    font-weight: 500;
+    margin-top: 20px;
+    color: #333;
+}
+
+ol {
+    margin-left: 20px;
+    font-size: 1rem; /* Slightly larger list items for better readability */
+}
+
+ol li {
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 1rem; /* Smaller paragraph text */
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .about-content {
+        font-size: 0.9rem; /* Even smaller text for mobile */
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem; /* Smaller title on mobile */
+    }
+    
+    h2 {
+        font-size: 1.6rem; /* Smaller sub-heading on mobile */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Smaller sub-heading on mobile */
+    }
+}

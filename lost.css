@@ -1,0 +1,138 @@
+/* Resetting margins and paddings for common elements */
+body, h1, label, input, textarea, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #35424a;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and Textarea Styles */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Button Styles */
+button {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; /* Ensure consistent button font size */
+}
+
+button:hover {
+    background-color: #4a5865; /* Change button color on hover */
+}
+
+/* Navigation Styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align navigation items to the right */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Navigation Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+
+    nav ul {
+        display: none; /* Hide navigation items by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ffffff;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex; /* Show navigation items when active */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 95%; /* Adjust container width on smaller screens */
+    }
+}

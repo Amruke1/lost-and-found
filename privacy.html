@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Privacy Policy</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="lostitem.html">E humbur</a></li>
+            <li><a href="founditem.html">E gjetur</a></li>
+            <li><a href="search.html">Kërko</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div id="nav-placeholder"></div>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="privacy-content">
+            <h2>1. Informatat qe ne i marrim</h2>
+            <p>Ne mbledhim informacionin që ju jepni kur përdorni shërbimin tonë, duke përfshirë të dhënat personale dhe informacionin rreth sendeve të humbura ose të gjetura.</p>
+
+            <h2>2.  Si i perdorim informatat e juaja</h2>
+            <p>Ne përdorim informacionin tuaj për të ofruar dhe përmirësuar shërbimin tonë, për të komunikuar me ju dhe për të ndihmuar në ribashkimin e sendeve të humbura me pronarët e tyre.</p>
+
+            <h2>3. Ndarja dhe Zbulimi i Informacionit</h2>
+            <p>Ne nuk shesim informacionin tuaj personal. Mund të ndajmë informacion me përdorues të tjerë vetëm kur është e nevojshme për të lehtësuar procesin e humbjes dhe gjetjes së sendeve.
+
+            </p>
+
+            <h2>4. Siguria e Të Dhënave</h2>
+            <p>Ne zbatojmë masa të arsyeshme sigurie për të mbrojtur informacionin tuaj personal nga qasjet ose zbulimet e paautorizuara.</p>
+
+            <h2>5. Zgjedhjet Tuaja            </h2>
+            <p>
+                Mund të rishikoni, përditësoni ose fshini informacionin e llogarisë tuaj në çdo kohë duke u identifikuar në llogarinë tuaj.</p>
+
+            <h2>6. Ndryshimet në këtë politikë
+            </h2>
+            <p>Ne mund ta përditësojmë këtë politikë të privatësisë herë pas here. Do t'ju njoftojmë për çdo ndryshim duke publikuar politikën e re në këtë faqe.            </p>
+
+            <h2>7. Na kontaktoni</h2>
+            <p>Nëse keni ndonjë pyetje në lidhje me këtë politikë privatësie, ju lutem na kontaktoni në privacy@lostandfound.com.</p>
+        </div>
+    </div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+</script>
+            <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active'); // Toggle the active class
+    });
+</script>
+<script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+        var navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+
+    });
+</script>
+    
+</body>
+</html>
