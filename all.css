@@ -26,8 +26,11 @@ header {
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+<<<<<<< HEAD
     z-index: 2;
     padding: 10px 0;
+=======
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 }
 
 header a {
@@ -253,6 +256,7 @@ img {
         margin: 10px 0;
     }
 }
+<<<<<<< HEAD
 header {
     position: sticky  ; 
     left:0; 
@@ -284,3 +288,5 @@ button.custom {
 button.custom:hover {
     background-color: #4a5865;
 }
+=======
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e

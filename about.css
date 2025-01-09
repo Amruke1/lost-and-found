@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
@@ -46,10 +47,62 @@ h2 {
 h3 {
     font-size: 1.4rem; /* Smaller sub-heading */
     font-weight: 500;
+=======
+/* Reset some default styles */
+body, h1, h2, p, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About content styles */
+.about-content h2 {
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
     margin-top: 20px;
     color: #333;
 }
 
+<<<<<<< HEAD
 ol {
     margin-left: 20px;
     font-size: 1rem; /* Slightly larger list items for better readability */
@@ -88,3 +141,45 @@ p {
         font-size: 1.2rem; /* Smaller sub-heading on mobile */
     }
 }
+=======
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-content ol {
+    margin-left: 20px;
+}
+body, h1, label, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation styles */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;}
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e

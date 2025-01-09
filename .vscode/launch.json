@@ -12,4 +12,8 @@
             "webRoot": "${workspaceFolder}"
         }
     ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e

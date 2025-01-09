@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 /* Resetting margins and paddings for common elements */
+=======
+/* Reset some default styles */
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 body, h1, label, input, textarea, select, button {
     margin: 0;
     padding: 0;
 }
 
+<<<<<<< HEAD
 /* Body Styles */
+=======
+/* Body styles */
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,7 +20,11 @@ body {
     color: #333;
 }
 
+<<<<<<< HEAD
 /* Container Styles */
+=======
+/* Container styles */
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 .container {
     width: 80%;
     max-width: 600px;
@@ -23,34 +35,55 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 /* Header Styles */
+=======
+/* Heading styles */
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #35424a;
 }
 
+<<<<<<< HEAD
 /* Form Group Styles */
+=======
+/* Form group styles */
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 .form-group {
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 /* Label Styles */
+=======
+/* Label styles */
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* Input and Textarea Styles */
 input[type="text"],
 input[type="date"],
 select,
 textarea {
+=======
+/* Input and textarea styles */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+<<<<<<< HEAD
     box-sizing: border-box; /* Ensure padding is included in total width */
 }
 
@@ -62,11 +95,21 @@ textarea {
 button {
     background-color: #35424a;
     color: white;
+=======
+    box-sizing: border-box;
+}
+
+/* Button styles */
+button {
+    background: #35424a;
+    color: #ffffff;
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+<<<<<<< HEAD
     font-size: 16px; /* Ensure consistent button font size */
 }
 
@@ -75,6 +118,35 @@ button:hover {
 }
 
 /* Navigation Styles */
+=======
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2c3e50;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+body, h1, label, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation styles */
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 nav {
     background: #333;
     color: #fff;
@@ -84,7 +156,11 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+<<<<<<< HEAD
     justify-content: flex-end; /* Align navigation items to the right */
+=======
+    justify-content: center;
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
 }
 
 nav ul li {
@@ -93,6 +169,7 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
+<<<<<<< HEAD
     text-decoration: none;
 }
 
@@ -134,5 +211,50 @@ nav ul li a {
 @media (max-width: 600px) {
     .container {
         width: 95%; /* Adjust container width on smaller screens */
+=======
+    text-decoration: none;}
+    /* Base styles for the hamburger menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Size of the hamburger icon */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for the navigation links */
+nav ul {
+    display: flex; /* Default display for desktop */
+    justify-content: flex-end; /* Align to the right */
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    nav ul {
+        display: none; /* Hide the nav links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust based on header height */
+        right: 0; /* Align to the right */
+        background-color: #ffffff; /* Background color */
+        width: 100%; /* Full width */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    nav ul.active {
+        display: flex; /* Show the nav links when active */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between items in mobile view */
+>>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
     }
 }
