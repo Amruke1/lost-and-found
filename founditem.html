@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost and Found - Post Found Item</title>
-<<<<<<< HEAD
-    <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="founditem.css"> <!-- Corrected path -->
+    <link rel="stylesheet" href="founditem.css"> 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,34 +30,12 @@
     <div id="nav-placeholder"></div>
     
     <div class="container mt-4">
-=======
-    <link rel="stylesheet" href="founditem .css"> <!-- Ensure this path is correct -->
-</head>
-<body>
-    <nav>
-    </div>
-    <nav>
-        <div class="hamburger" id="hamburger">
-            &#9776; 
-        </div>
-        <ul id="nav-links">
-            <li class="current"><a href="home .html">Home</a></li>
-            <li><a href="reportlost.html">E humbur</a></li>
-            <li><a href="founditem.html">E gjetur</a></li>                   
-            <li><a href="search.html">Kërko</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-</div>
-    </nav>
-    <div id="nav-placeholder"></div>
-    <div class="container">
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
+
         <h1>Raporto një gjë që keni gjetur</h1>
         <form id="found-item-form">
             <div class="form-group">
                 <label for="itemName">Emri i produktit:</label>
-<<<<<<< HEAD
+
                 <input type="text" class="form-control" id="itemName" name="itemName" required>
             </div>
             <div class="form-group">
@@ -76,25 +53,7 @@
             <div class="form-group">
                 <label for="category">Kategoria:</label>
                 <select class="form-control" id="category" name="category" required>
-=======
-                <input type="text" id="itemName" name="itemName" required>
-            </div>
-            <div class="form-group">
-                <label for="description">Përshkrimi:</label>
-                <textarea id="description" name="description" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="location">Vendi ku e keni gjetur:</label>
-                <input type="text" id="location" name="location" required>
-            </div>
-            <div class="form-group">
-                <label for="date">Data kur e keni gjetur:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-                <label for="category">Kategoria:</label>
-                <select id="category" name="category" required>
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
+
                     <option value="">Selekto një kategori</option>
                     <option value="electronics">Elektronike</option>
                     <option value="clothing">Veshmbathje</option>
@@ -103,27 +62,23 @@
                     <option value="other">Të tjera</option>
                 </select>
             </div>
-<<<<<<< HEAD
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
     
-=======
-            <button type="submit">Submit</button>
-        </form>
-    </div>
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
+
     <script>
         fetch('nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('nav-placeholder').innerHTML = data;
-<<<<<<< HEAD
+
             })
             .catch(error => console.error('Error fetching nav.html:', error)); // Handle fetch errors
     </script>
     
-    <!-- Bootstrap JS and dependencies -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -140,9 +95,7 @@
             const scrollY = window.scrollY;
             videoBackground.style.opacity = Math.max(0, 1 - scrollY / 500); // Adjust 500 for speed of fade
         });
-=======
-            });
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
+
     </script>
 </body>
 </html>

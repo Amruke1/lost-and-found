@@ -53,46 +53,7 @@
             <div class="mb-3">
                 <label for="category" class="form-label">Category:</label>
                 <select class="form-select" id="category" name="category" required>
-=======
-</head>
-<body>
-    <nav>
-        <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="lostitem.html">E humbur</a></li>
-            <li><a href="founditem.html">E gjetur</a></li>
-            <li><a href="search.html">Kërko</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <div id="nav-placeholder"></div>
-    <div class="container">
-        <h1>Post a Lost Item</h1>
-        <form id="lost-item-form">
-            <div class="form-group">
-                <label for="itemName">Item Name:</label>
-                <input type="text" id="itemName" name="itemName" required>
-            </div>
 
-            <div class="form-group">
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required>
-            </div>
-
-            <div class="form-group">
-                <label for="date">Date Lost:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-
-            <div class="form-group">
-                <label for="category">Category:</label>
-                <select id="category" name="category" required>
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
                     <option value="">Selekto kategorine</option>
                     <option value="electronics">Elektronike</option>
                     <option value="clothing">Veshmbathje</option>
@@ -102,31 +63,26 @@
                 </select>
             </div>
 
-<<<<<<< HEAD
+
             <button type="submit" class="btn btn-primary">Raporto</button>
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-=======
-            <button type="submit">Raporto</button>
-        </form>
-    </div>
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
+
     <script>
         fetch('nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('nav-placeholder').innerHTML = data;
             });
-<<<<<<< HEAD
+
 
         document.getElementById('lost-item-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            // Handle form submission logic here
+           
         });
-=======
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
+
     </script>
 </body>
 </html>

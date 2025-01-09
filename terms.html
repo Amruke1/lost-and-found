@@ -79,7 +79,7 @@
     </div>
    
     <script>
-<<<<<<< HEAD
+
         document.getElementById('hamburger').addEventListener('click', function () {
             var navLinks = document.getElementById('nav-links');
             navLinks.classList.toggle('show');
@@ -90,17 +90,11 @@
         window.addEventListener('scroll', function() {
             const videoBackground = document.getElementById('video-background');
             const scrollY = window.scrollY;
-            videoBackground.style.opacity = Math.max(0, 1 - scrollY / 500); // Adjust 500 for speed of fade
+            videoBackground.style.opacity = Math.max(0, 1 - scrollY / 500);
         });
     </script>
 
-=======
-        document.getElementById('hamburger').addEventListener('click', function() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active'); // Toggle the active class
-        });
-    </script>
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
+
     
 </body>
 </html>
