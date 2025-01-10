@@ -46,3 +46,6 @@ body {
 .lost-and-found__button--long:hover {
     background-color: #005a9e; /* Darker shade on hover */
 }
+footer{
+    color: white;
+}

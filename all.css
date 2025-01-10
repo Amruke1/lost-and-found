@@ -21,16 +21,15 @@ body {
 }
 
 header {
-    background: #9AA6B2; /* Header color */
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
     color: #000000;
-    padding: 20px 0;
+    padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-<<<<<<< HEAD
-    z-index: 2;
-    padding: 10px 0;
-=======
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
+    position: sticky; 
+    left: 0; 
+    width: 100%; 
+    z-index: 2; 
 }
 
 header a {
@@ -38,6 +37,7 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
+    transition: color 0.3s ease; /* Added transition */
 }
 
 header ul {
@@ -69,7 +69,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #9AA6B2; /* Link color */
+    color: #9AA6B2;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -104,7 +104,8 @@ nav ul li a:hover {
     min-height: 300px;    
     display: flex;        
     flex-direction: column;
-    background: #B2C9AD; /* Card background color */
+    background: #B2C9AD; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
 .card-body {
@@ -112,16 +113,16 @@ nav ul li a:hover {
     display: flex;         
     flex-direction: column; 
     justify-content: center; 
-    padding: 20px; /* Add padding inside the card body */
+    padding: 20px; 
 }
 
 .card-title {
     font-weight: bold; 
-    color: #4B5945; /* Dark Olive Green for title */
+    color: #4B5945; 
 }
 
 .card-text {
-    color: #000000; /* Black for text */
+    color: #000000; 
 }
 
 .item-card {
@@ -134,7 +135,7 @@ nav ul li a:hover {
 
 .item-card h3 {
     margin-top: 0;
-    color: #9AA6B2; /* Grayish Blue for item card heading */
+    color: #9AA6B2; 
 }
 
 #search-results,
@@ -150,7 +151,7 @@ nav ul li a:hover {
 
 .form-container h2 {
     margin-bottom: 20px;
-    color: #9AA6B2; /* Grayish Blue for form headings */
+    color: #9AA6B2; 
 }
 
 .form-container input[type="text"],
@@ -169,24 +170,27 @@ nav ul li a:hover {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background: #BCCCDC; /* Button background color */
-    color: #000000; /* Black text for buttons */
+    background: #BCCCDC; 
+    color: #000000; 
     border: none;
     cursor: pointer;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Added transition */
 }
 
 .form-container button:hover,
 .button:hover {
-    background: #91AC8F; /* Darker button color on hover */
+    background: #91AC8F; 
 }
 
 footer {
     display: block;
     text-align: center;
+    padding: 20px 0; /* Added padding */
+    background-color: #F8FAFC; /* Light background for footer */
+    border-top: 1px solid #ddd; /* Subtle top border */
 }
 
 img {
@@ -198,6 +202,8 @@ img {
     width: 100%;
     height: auto; 
     border-radius: 10px 10px 0 0; 
+    max-height: 200px; /* Limit height for cards */
+    object-fit: cover; /* Ensure the image covers the area */
 }
 
 .row {
@@ -256,18 +262,9 @@ img {
         margin: 10px 0;
     }
 }
-<<<<<<< HEAD
-header {
-    position: sticky  ; 
-    left:0; 
-    width:100%; 
-    z-index:2; 
-    background :rgba(255, 255, 255, 0.8); 
-    padding :10px 0; 
-}
 
 #video-background {
-    position: fixed; /* Keep the video fixed */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -275,6 +272,7 @@ header {
     object-fit: cover;
     z-index: -1;
 }
+
 button.custom {
     background-color: #35424a;
     color: white;
@@ -288,5 +286,3 @@ button.custom {
 button.custom:hover {
     background-color: #4a5865;
 }
-=======
->>>>>>> 359359691d47f93b05d207892109be36ae11ce9e
