@@ -1,0 +1,36 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.AN.modal-bottom {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: 1050;
+}
+
+.AN.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.AN.modal-header {
+  border: none;
+}
+
+.AN.modal-header h5 {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.AN.modal-body p {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.modal-body{
+  color: black;
+}
