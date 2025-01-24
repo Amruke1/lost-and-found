@@ -286,3 +286,9 @@ button.custom {
 button.custom:hover {
     background-color: #4a5865;
 }
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
