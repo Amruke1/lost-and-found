@@ -101,12 +101,11 @@ nav ul li a:hover {
     border: none; 
     border-radius: 10px; 
     flex: 1;               
-    min-height: 300px;    
+    height: 350px; /* Fixed height for uniformity */
     display: flex;        
     flex-direction: column;
     background: #B2C9AD; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-    height: 350px; /* Fixed height for uniformity */
 }
 
 .card-body {
