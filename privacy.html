@@ -86,5 +86,12 @@
                 document.getElementById('nav-placeholder').innerHTML = data;
             });
     </script>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+
+        });
+    </script>
 </body>
 </html>
