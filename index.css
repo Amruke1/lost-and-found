@@ -7,7 +7,7 @@ body {
     overflow: hidden;
 }
 
-.AN.modal-bottom {
+.an-modal-bottom {
     position: fixed;
     bottom: 50px;
     left: 0;
@@ -16,26 +16,26 @@ body {
     z-index: 1050;
 }
 
-.AN.modal-content {
+.an-modal-content {
     border: none;
     border-radius: 0;
 }
 
-.AN.modal-header {
+.an-modal-header {
     border: none;
 }
 
-.AN.modal-header h5 {
+.an-modal-header h5 {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
 
-.AN.modal-body p {
+.an-modal-body p {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
 
-.modal-body {
+.an-modal-body {
     color: black;
 }
 
@@ -45,7 +45,7 @@ body {
     padding: 0;
 }
 
-.btn-container {
+.an-btn-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -82,13 +82,13 @@ button {
     align-items: center;
     margin: 0 1rem;
 
-    .text,
-    .icon-container {
+    .an-text,
+    .an-icon-container {
         position: relative;
         z-index: 2;
     }
 
-    .icon-container {
+    .an-icon-container {
         --icon-size: 20px; /* Reduced the icon size */
         position: relative;
         width: var(--icon-size);
@@ -96,7 +96,7 @@ button {
         margin-left: 15px;
         transition: transform 500ms ease;
 
-        .icon {
+        .an-icon {
             position: absolute;
             left: 0;
             top: 0;
@@ -135,9 +135,9 @@ button {
             transform: translateX(65%);
         }
 
-        .icon-container {
+        .an-icon-container {
             transform: translateX(125%);
-            .icon {
+            .an-icon {
                 &--left {
                     transform: translateX(0);
                     opacity: 1;
@@ -151,7 +151,7 @@ button {
     }
 }
 
-.support {
+.an-support {
     position: absolute;
     right: 10px;
     bottom: 10px;
