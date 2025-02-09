@@ -29,31 +29,29 @@
     
     <div id="nav-placeholder"></div>
     
-    <div class="container mt-4">
+    <div class="an-container mt-4">
 
-        <h1>Raporto një gjë që keni gjetur</h1>
+        <h1 class="an-title">Raporto një gjë që keni gjetur</h1>
         <form id="found-item-form">
-            <div class="form-group">
+            <div class="an-form-group">
                 <label for="itemName">Emri i produktit:</label>
-
                 <input type="text" class="form-control" id="itemName" name="itemName" required>
             </div>
-            <div class="form-group">
+            <div class="an-form-group">
                 <label for="description">Përshkrimi:</label>
                 <textarea class="form-control" id="description" name="description" required></textarea>
             </div>
-            <div class="form-group">
+            <div class="an-form-group">
                 <label for="location">Vendi ku e keni gjetur:</label>
                 <input type="text" class="form-control" id="location" name="location" required>
             </div>
-            <div class="form-group">
+            <div class="an-form-group">
                 <label for="date">Data kur e keni gjetur:</label>
                 <input type="date" class="form-control" id="date" name="date" required>
             </div>
-            <div class="form-group">
+            <div class="an-form-group">
                 <label for="category">Kategoria:</label>
                 <select class="form-control" id="category" name="category" required>
-
                     <option value="">Selekto një kategori</option>
                     <option value="electronics">Elektronike</option>
                     <option value="clothing">Veshmbathje</option>
@@ -67,17 +65,29 @@
         </form>
     </div>
     
+    <footer>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="lostitem.html" class="nav-link active">E humbur</a></li>
+            <li class="nav-item"><a href="founditem.html" class="nav-link">E gjetur</a></li>
+            <li class="nav-item"><a href="search.html" class="nav-link">Kërko</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="privacy.html" class="nav-link">Privacy</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="terms.html" class="nav-link">Terms</a></li>      
+        </ul>
+        <p class="text-center text-body-secondary">Lost & Found Kosovo | School Project &copy; 2024</p>
+    </footer>
+    
 
     <script>
         fetch('nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('nav-placeholder').innerHTML = data;
-
             })
             .catch(error => console.error('Error fetching nav.html:', error)); 
     </script>
-    
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -86,16 +96,14 @@
         document.getElementById('hamburger').addEventListener('click', function () {
             var navLinks = document.getElementById('nav-links');
             navLinks.classList.toggle('show');
-
         });
     </script>
-      <script>
+    <script>
         window.addEventListener('scroll', function() {
             const videoBackground = document.getElementById('video-background');
             const scrollY = window.scrollY;
             videoBackground.style.opacity = Math.max(0, 1 - scrollY / 500); // Adjust 500 for speed of fade
         });
-
     </script>
 </body>
 </html>
